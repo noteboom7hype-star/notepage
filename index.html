@@ -1,28 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Noteboom Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f4;
+    * {
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      box-sizing: border-box;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    h1 {
+
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
       margin-top: 20px;
+      font-weight: 600;
+      color: #222;
+      letter-spacing: 1px;
+    }
+
+    .construction {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #e63946;
+      background: #ffe5e5;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <img src="notebote.jpeg" alt="Noteboom Character">
-  <h1>Noteboom Page</h1>
+  <header>
+    <img src="your-image-file.jpeg" alt="Noteboom Logo" class="logo">
+    <h1>Noteboom Page</h1>
+    <p class="construction">🚧 Em construção! Mais em breve aí estará pronto 🚧</p>
+  </header>
+
+  <footer>
+    © 2026 Noteboom — Todos os direitos reservados.
+  </footer>
 </body>
 </html>
